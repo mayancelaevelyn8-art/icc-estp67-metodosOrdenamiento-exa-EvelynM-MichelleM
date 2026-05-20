@@ -24,8 +24,8 @@ public class BrandControllerTest {
             String linea;
             while ((linea = reader.readLine()) != null) {
                 linea = linea.trim();
-                if (linea.startsWith("FILA_ESTUDIANTE=")) {
-                    return linea.substring("FILA_ESTUDIANTE=".length()).trim();
+                if (linea.startsWith("FILA_ESTUDIANTE= D")) {
+                    return linea.substring("FILA_ESTUDIANTE= D".length()).trim();
                 }
             }
         } catch (IOException e) {
